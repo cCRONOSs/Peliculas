@@ -5,7 +5,7 @@ import { FaSpinner } from "react-icons/fa6";
 import './moviesList.css'
 
 
-export default function ListaPeliculas(){
+export default function ListaPeliculas(props){
     const [buscar, setBuscar] = useState('')
     const [peliculas, setPeliculas] = useState([])
     const [peliculasFilter, setPeliculasFilter] = useState([])
@@ -13,7 +13,7 @@ export default function ListaPeliculas(){
 
     useEffect(() => {
         if(loading){
-        fetch('https://api-pelis-back.onrender.com/comedia')
+        fetch(`https://api-pelis-back.onrender.com/${props.genero}`)
             .then(response => response.json())
             .then(data => {
                 setPeliculas(data.peliculas)
@@ -29,8 +29,8 @@ export default function ListaPeliculas(){
             setPeliculasFilter(peliculas)
         } else {
             setBuscar(event.target.value)//actualiza el estado de search - guarda lo que escribi.
-            let pelisFilter = peliculas.filter((peli) => peli.titulo.toLowerCase().includes(buscar.toLowerCase()))
-            setPeliculasFilter(pelisFilter)
+            let filtrado = peliculas.filter((item) => item.titulo.toLowerCase().includes(buscar.toLowerCase()))
+            setPeliculasFilter(filtrado)
         }
     }
 

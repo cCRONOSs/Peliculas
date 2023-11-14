@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './Sections/Home/Home.jsx'
+import Portada from './Sections/Portada/Portada.jsx';
 import { createBrowserRouter, RouterProvider, Route, Link, } from "react-router-dom";
 import ListaPeliculas from './Sections/moviesList/moviesList.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,11 +16,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Hola soy hijo del Home</h1>,
+        element: <Portada />,
       },
       {
         path: "/comedia",
-        element: <ListaPeliculas />,
+        element: <ListaPeliculas genero= 'comedia' key="comedia" />,
+      },
+      {
+        path: "/independientes",
+        element: <ListaPeliculas genero= 'independientes' key="independientes" />,
+      },
+      {
+        path: "/clasicas",
+        element: <ListaPeliculas genero= 'clasicas' key="clasicas" />,
       }
     ]
   },
