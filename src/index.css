@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffff00;
+}
+.backgroundPurple{
+  background-color: #451952;
+}
+
+/* Encabezados */
+
+h1{
+  color: #ae445a;
+}
+
+h2{
+  color: #ae445a;
+}
+
+h3{
+  color: #ae445a;
+}
