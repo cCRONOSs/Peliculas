@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './sections/Home/Home.jsx'
-import Portada from './Sections/Portada/Portada.jsx';
+import Portada from './sections/Portada/Portada.jsx';
 import { createBrowserRouter, RouterProvider, Route, Link, } from "react-router-dom";
-import ListaPeliculas from './Sections/moviesList/moviesList.jsx';
+import ListaPeliculas from './sections/moviesList/moviesList.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
