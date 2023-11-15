@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './Sections/Home/Home.jsx'
+import Home from './sections/Home/Home.jsx'
 import Portada from './Sections/Portada/Portada.jsx';
 import { createBrowserRouter, RouterProvider, Route, Link, } from "react-router-dom";
 import ListaPeliculas from './Sections/moviesList/moviesList.jsx';
