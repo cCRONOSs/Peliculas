@@ -9,7 +9,7 @@ export default function Menu(){
     return(
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <img className="iconName" src="./src/assets/iconMovie.png"></img>
+        <img className="iconName" src="\src\assets\iconMovie.png"></img>
         <Navbar.Brand href="/"className="nombrePagina">MoviesCooolll!!!!!</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
